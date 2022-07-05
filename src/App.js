@@ -2,8 +2,11 @@ import logo from './assets/image/favicon.png';
 import cloud from './assets/image/cloud.gif';
 import grass from './assets/image/grass.gif';
 import chicken from './assets/image/chicken.gif';
-import Switch from 'react-switch';
 import { useEffect, useState } from 'react';
+import StyledButton from './components/atoms/styledButton';
+import FloatingCard from './components/atoms/floatingCard';
+import NumberInputWithLabel from './components/molecules/numberInputWithLabel';
+import ToogleSwitch from './components/molecules/toggleSwitch';
 
 function App() {
   const [operationalTime, setOperationalTime] = useState(0);
@@ -34,6 +37,8 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    console.log(e.target.value)
     
     setAnswerContent(
       <div className='text-sm'>
@@ -65,23 +70,13 @@ function App() {
           </div>
 
           <form className='w-full pr-40' onSubmit={handleSubmit}>
-            <div className='mt-2'>
-              <label htmlFor="Operational Time" className='block'>Operational Time</label>
-              <input type="number" name="operational" className='rounded-md w-full h-11 mt-1 text-md px-3' onWheel={(e) => e.target.blur()} min={1} placeholder="Number of Days" onChange={(e) => setOperationalTime(e.target.value)}/>
-            </div>
-
-            <div className='mt-6'>
-              <label htmlFor="Maintenance Time" className='block'>Maintenance Time</label>
-              <input type="number" name="maintenance" className='rounded-md w-full h-11 mt-1 text-md px-3' onWheel={(e) => e.target.blur()} min={0} placeholder="Number of Days" onChange={(e) => setMaintenanceTime(e.target.value)}/>
-            </div>
+            <NumberInputWithLabel labelText="Operational Time" targetName="operational" placeholder="Number of days" minimum={1} onChangeFunction={(e) => setOperationalTime(e.target.value)}/>
+            <NumberInputWithLabel labelText="Maintenance Time" targetName="maintenance" placeholder="Number of days" containerStyling="mt-6" onChangeFunction={(e) => setMaintenanceTime(e.target.value)}/>
 
             <div className='flex mt-6'>
-              <label className='h-max my-auto mr-3'>Odd-Even Rule</label>
-              <div className='mt-2'>
-                <Switch onChange={handleOddEven} checked={isOddEven} onColor="#FF8901"/>
-              </div>
+              <ToogleSwitch labelText="Odd-Even Rule" switchHandle={handleOddEven} checkedStatus={isOddEven} />
               <div className='flex justify-end grow'>
-                <button type='submit' className='text-white bg-orange rounded-md px-5 font-bold px-10'>Submit</button>
+                <StyledButton buttonText="Submit"/>
               </div>
             </div>
           </form>
@@ -105,19 +100,11 @@ function App() {
 
           {/* Chicken */}
           <div className='w-full flex justify-end pr-52'>
-            <div className='bg-white w-80 h-28 pl-3 mr-10 rounded-lg absolute -translate-y-28 -translate-x-10 align-middle'>
-              <div className='h-full flex'>
-                <div className='my-auto'>
-                  {welcomeStatus ? 
-                    <div>
-                      Welcome to Truck Counter Pitik! 🐔
-                    </div>
-                  :
-                    answerContent
-                  }
-                </div>   
-              </div>
-            </div>
+              {welcomeStatus ? 
+                <FloatingCard cardText="Welcome to Truck Counter Pitik! 🐔" styling="bg-white w-80 h-28 pl-3 mr-10 rounded-lg absolute -translate-y-28 -translate-x-10 align-middle"/>
+              :
+                <FloatingCard cardText={answerContent} styling="bg-white w-80 h-28 pl-3 mr-10 rounded-lg absolute -translate-y-28 -translate-x-10 align-middle"/>
+              }
             <img src={chicken} alt="Chicken Gif" className='w-20 translate-y-0.5'/>
           </div>
 
