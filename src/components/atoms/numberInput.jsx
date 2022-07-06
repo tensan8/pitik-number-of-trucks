@@ -7,7 +7,8 @@ function NumberInput(props) {
                 name={props.targetName}
                 className={props.styling} 
                 onWheel={(e) => e.target.blur()} 
-                min={props.minimum} 
+                min={props.minimum}
+                max={props.maximum}
                 placeholder={props.placeholder}
                 required={true}
                 onChange={props.onChangeFunction}
@@ -19,6 +20,7 @@ function NumberInput(props) {
 NumberInput.defaultProps = {
     targeName: "",
     minimum: 0,
+    maximum: 30,
     placeholder: "",
     styling: "rounded-md w-full h-11 mt-1 text-md px-3",
     onChangeFunction: null

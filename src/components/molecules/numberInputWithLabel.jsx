@@ -6,7 +6,7 @@ function NumberInputWithLabel(props) {
     return (
         <div className={props.containerStyling}>
             <label className='block'>{props.labelText}</label>
-            <NumberInput targetName={props.targetName} placeholder={props.placeholder} minimum={props.minimum} onChangeFunction={props.onChangeFunction}/>
+            <NumberInput targetName={props.targetName} placeholder={props.placeholder} minimum={props.minimum} maximum={props.maximum} onChangeFunction={props.onChangeFunction}/>
         </div>
     )
 }
