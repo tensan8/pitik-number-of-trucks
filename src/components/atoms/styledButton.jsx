@@ -1,3 +1,4 @@
+// This component is the styled button with being submit button in default
 
 function StyledButton(props) {
     return (

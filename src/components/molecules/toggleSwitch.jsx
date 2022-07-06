@@ -1,5 +1,7 @@
 import Switch from 'react-switch';
 
+// This component is the template that you can use to include a set of label and switch to the interface.
+
 function ToogleSwitch(props) {
     return (
         <div className={props.containerStyling}>

@@ -1,3 +1,4 @@
+// This component can be used to include a card that can be placed somewhere on the screen
 
 function FloatingCard(props) {
     return (

@@ -1,5 +1,6 @@
-// Those who want to use the template of label and number input can use this component instead
 import NumberInput from '../atoms/numberInput';
+
+// Those who want to use the template of label and number input can use this component instead
 
 function NumberInputWithLabel(props) {
     return (

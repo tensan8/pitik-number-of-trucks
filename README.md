@@ -7,7 +7,7 @@ https://www.figma.com/file/VsrdNUZpTAzWNsDHaEUutq/Pitik-Test?node-id=0%
 https://docs.google.com/spreadsheets/d/1ncs_BGSalYMPDpyiWrTIHSBLFQPJ_52_8ejmXxU85DY/edit?usp=sharing
 
 # Limitations
-1. You might need to resize (zoom in or out) your browser to adjust the alignment of the website as the website is not responsive enough at the moment (under development)
+1. You might need to resize (zoom in or out, best resolution 1280x720) your browser to adjust the alignment of the website as the website is not responsive enough at the moment (under development)
 
 # Under Development
 1. Parallax Scrolling Effect

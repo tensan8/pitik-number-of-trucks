@@ -1,12 +1,16 @@
 import FloatingCard from '../../components/atoms/floatingCard';
 import chicken from '../../assets/image/chicken.gif';
 
+// In case that you want to put the chicken asset on the screen, you can use this component.
+// You can also include the bubble on top of the chicken by defining the props as true, otherwise only the chicken will appear.
+
 function ChickenWithBubble(props) {
     return (
         <div className={props.containerStyling}>
             {/* The bubble */}
             {props.withBubble ? 
                 <div>
+                    {/* Decide what text to show, set it as False if you want to show other text (not the default welcome text) */}
                     {props.welcomeStatus ? 
                         <FloatingCard cardText="Welcome to Truck Counter Pitik! 🐔" styling={props.bubbleStyling}/>
                     :
