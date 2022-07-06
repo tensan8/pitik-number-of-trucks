@@ -1,6 +1,9 @@
 # Pitik-Number-of-Trucks
 This Repo was made in order to accomplish the task given to apply for the Front-End Developer position at Pitik where the test project is about counting the number of trucks needed based on the given conditions.
 
+# Deployed Website
+https://tensan8.github.io/pitik-number-of-trucks/
+
 # Brainstorming and Design
 https://www.figma.com/file/VsrdNUZpTAzWNsDHaEUutq/Pitik-Test?node-id=0%
 
