@@ -11,8 +11,7 @@ https://docs.google.com/spreadsheets/d/1ncs_BGSalYMPDpyiWrTIHSBLFQPJ_52_8ejmXxU8
 
 # Under Development
 1. Parallax Scrolling Effect
-2. Codes Refactorization
-3. Website Responsiveness
+2. Website Responsiveness
 
 # Credits
 1. Pinterest
