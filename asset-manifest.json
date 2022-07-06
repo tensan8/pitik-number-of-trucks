@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.5acefb4f.css",
-    "main.js": "/static/js/main.df2552dd.js",
-    "static/js/787.a5332e12.chunk.js": "/static/js/787.a5332e12.chunk.js",
-    "static/media/favicon.png": "/static/media/favicon.49670169155f2f79ed15.png",
-    "static/media/grass.gif": "/static/media/grass.7fa184d2a3d35d38a5a9.gif",
-    "static/media/chicken.gif": "/static/media/chicken.d133cdef07a5a9bd42b4.gif",
-    "index.html": "/index.html",
-    "main.5acefb4f.css.map": "/static/css/main.5acefb4f.css.map",
-    "main.df2552dd.js.map": "/static/js/main.df2552dd.js.map",
-    "787.a5332e12.chunk.js.map": "/static/js/787.a5332e12.chunk.js.map"
+    "main.css": "/pitik-number-of-trucks/static/css/main.5acefb4f.css",
+    "main.js": "/pitik-number-of-trucks/static/js/main.c3fc94f4.js",
+    "static/js/787.a5332e12.chunk.js": "/pitik-number-of-trucks/static/js/787.a5332e12.chunk.js",
+    "static/media/favicon.png": "/pitik-number-of-trucks/static/media/favicon.49670169155f2f79ed15.png",
+    "static/media/grass.gif": "/pitik-number-of-trucks/static/media/grass.7fa184d2a3d35d38a5a9.gif",
+    "static/media/chicken.gif": "/pitik-number-of-trucks/static/media/chicken.d133cdef07a5a9bd42b4.gif",
+    "index.html": "/pitik-number-of-trucks/index.html",
+    "main.5acefb4f.css.map": "/pitik-number-of-trucks/static/css/main.5acefb4f.css.map",
+    "main.c3fc94f4.js.map": "/pitik-number-of-trucks/static/js/main.c3fc94f4.js.map",
+    "787.a5332e12.chunk.js.map": "/pitik-number-of-trucks/static/js/787.a5332e12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5acefb4f.css",
-    "static/js/main.df2552dd.js"
+    "static/js/main.c3fc94f4.js"
   ]
 }
